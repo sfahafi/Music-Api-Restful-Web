@@ -1,0 +1,20 @@
+use musicdb;
+
+CREATE TABLE `Albums` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `titulo` varchar(200) NOT NULL,
+  `lanzado` date NOT NULL,
+  `precio` double NOT NULL,
+  `genero` varchar(150) NOT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB;
+
+-- Artista Juanes
+insert into Albums values (0,'Un dia normal','2002-05-21',150.50,'Por en Español');
+
+-- Metallica
+insert into Albums values (0,'Master of Puppets','1986-01-01',3000.50,' Heavy Metal');
+insert into Albums values (0,'The Black Album','1991-05-05',4500.50,' Heavy Metal');
+insert into Albums values (0,'Death Magnetic','2008-05-21',5000.50,' Heavy Metal');
+
+select * from albums;

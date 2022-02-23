@@ -7,5 +7,5 @@ import net.sfahafi.api.entity.Album;
 public interface I_AlbumService {
 
 	List<Album> buscarTodos();
-	
+	void guardar(Album album);
 }

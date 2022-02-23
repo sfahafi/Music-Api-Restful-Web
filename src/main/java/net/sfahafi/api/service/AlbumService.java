@@ -20,4 +20,9 @@ public class AlbumService implements I_AlbumService {
 		return repoAlbum.findAll();
 	}
 
+	@Override
+	public void guardar(Album album) {
+		repoAlbum.save(album);
+	}
+
 }
