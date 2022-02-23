@@ -25,4 +25,9 @@ public class AlbumService implements I_AlbumService {
 		repoAlbum.save(album);
 	}
 
+	@Override
+	public void eliminar(int idAlbum) {
+		repoAlbum.deleteById(idAlbum);
+	}
+
 }
